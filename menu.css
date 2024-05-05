@@ -1,0 +1,353 @@
+@importar URL("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@importar URL(https://fonts.googleapis.com/css?family=Pacifico);
+cuerpo {
+  familia de fuentes: "Lato", Helvetica, Arial;
+  tamaño de fuente: 16px;
+}
+
+.centro de texto {
+  alineación de texto: centro;
+}
+
+*, *:antes después {
+  -webkit-border-sizing: borde-cuadro;
+  -moz-border-sizing: cuadro de borde;
+  tamaño de borde: cuadro de borde;
+}
+
+.envase {
+  ancho: 350 px;
+  margen: 50px automático;
+}
+.contenedor > ul {
+  estilo de lista: ninguno;
+  relleno: 0;
+  margen: 0 0 20px 0;
+}
+
+.título {
+  familia de fuentes: 'Pacífico';
+  peso de fuente: norma;
+  tamaño de fuente: 40px;
+  alineación de texto: centro;
+  altura de línea: 1,4;
+  color: #2980B9;
+}
+
+.desplegable un {
+  decoración de texto: ninguna;
+}
+.dropdown [data-toggle="dropdown"] {
+  posición: relativa;
+  bloqueo de pantalla;
+  color blanco;
+  fondo: #2980B9;
+  -moz-box-shadow: 0 1px 0 #409ad5 inserto, 0 -1px 0 #20638f inserto;
+  -webkit-box-shadow: 0 1px 0 #409ad5 inserto, 0 -1px 0 #20638f inserto;
+  sombra de cuadro: 0 1px 0 #409ad5 inserto, 0 -1px 0 #20638f inserto;
+  sombra de texto: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  relleno: 10px;
+}
+.dropdown [data-toggle="dropdown"]: pase el cursor {
+  antecedentes: #2c89c6;
+}
+.dropdown .icono-flecha {
+  posición: absoluta;
+  bloqueo de pantalla;
+  tamaño de fuente: 0,7 em;
+  color: #fff;
+  arriba: 14px;
+  derecha: 10px;
+}
+.dropdown .icon-arrow.open {
+  -moz-transform: rotar (-180 grados);
+  -ms-transform: rotar (-180 grados);
+  -webkit-transform: rotar (-180 grados);
+  transformar: rotar (-180 grados);
+  -transición-moz: -transformación-moz 0,6s;
+  -o-transición: -o-transformación 0,6s;
+  -webkit-transición: -webkit-transformación 0.6s;
+  transición: transformar 0,6 s;
+}
+.dropdown .icon-arrow.cerrar {
+  -moz-transform: rotar (0 grados);
+  -ms-transform: rotar (0 grados);
+  -webkit-transform: rotar (0 grados);
+  transformar: rotar (0 grados);
+  -transición-moz: -transformación-moz 0,6s;
+  -o-transición: -o-transformación 0,6s;
+  -webkit-transición: -webkit-transformación 0.6s;
+  transición: transformar 0,6 s;
+}
+.dropdown .icon-arrow:antes {
+  contenido: '\25BC';
+}
+.dropdown .menú desplegable {
+  altura máxima: 0;
+  desbordamiento: oculto;
+  estilo de lista: ninguno;
+  relleno: 0;
+  margen: 0;
+}
+.dropdown .menú desplegable li {
+  relleno: 0;
+}
+.dropdown .menú desplegable li a {
+  bloqueo de pantalla;
+  color: #6f6f6f;
+  antecedentes: #EEE;
+  -moz-box-shadow: 0 1px 0 recuadro blanco, 0 -1px 0 #d5d5d5 recuadro;
+  -webkit-box-shadow: 0 1px 0 recuadro blanco, 0 -1px 0 #d5d5d5 recuadro;
+  sombra de cuadro: 0 1px 0 recuadro blanco, 0 -1px 0 #d5d5d5 recuadro;
+  sombra de texto: 0 -1px 0 rgba(255, 255, 255, 0.3);
+  relleno: 10px 10px;
+}
+.dropdown .menú desplegable li a:hover {
+  fondo: #f6f6f6;
+}
+.dropdown .mostrar, .dropdown .hide {
+  -moz-transformación-origen: 50% 0%;
+  -ms-transformación-origen: 50% 0%;
+  -webkit-transformación-origen: 50% 0%;
+  origen de transformación: 50% 0%;
+}
+.dropdown .mostrar {
+  bloqueo de pantalla;
+  altura máxima: 9999 px;
+  -transformación moz: escalaY(1);
+  -transformación ms: escalaY(1);
+  -webkit-transformación: escalaY(1);
+  transformar: escalaY(1);
+  animación: showAnimation 0.5s facilidad de entrada y salida;
+  -moz-animation: showAnimation 0.5s fácil de entrar y salir;
+  -webkit-animation: showAnimation 0.5s fácil de entrar y salir;
+  -moz-transition: altura máxima 1s fácil entrada y salida;
+  -o-transición: altura máxima 1s fácil entrada y salida;
+  -webkit-transition: altura máxima 1s fácil entrada y salida;
+  transición: altura máxima 1 s fácil entrada y salida;
+}
+.dropdown .ocultar {
+  altura máxima: 0;
+  -transformación moz: escalaY(0);
+  -transformación ms: escalaY(0);
+  -webkit-transformación: escalaY(0);
+  transformar: escalaY(0);
+  animación: hideAnimation 0.4s facilitado;
+  -moz-animation: hideAnimation 0.4s facilita la salida;
+  -webkit-animation: hideAnimation 0.4s facilita su salida;
+  -moz-transition: altura máxima de salida de 0,6 s;
+  -o-transición: altura máxima de salida de 0,6 s;
+  -webkit-transition: altura máxima de 0,6 s;
+  transición: altura máxima de salida de 0,6 s;
+}
+
+@keyframes mostrarAnimación {
+  0% {
+    -transformación moz: escalaY(0.1);
+    -transformación ms: escalaY(0.1);
+    -webkit-transformación: escalaY(0.1);
+    transformar: escalaY(0.1);
+  }
+  40% {
+    -transformación moz: escalaY(1.04);
+    -transformación ms: escalaY(1.04);
+    -webkit-transformación: escalaY(1.04);
+    transformar: escalaY(1.04);
+  }
+  60% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.04);
+    -transformación ms: escalaY(1.04);
+    -webkit-transformación: escalaY(1.04);
+    transformar: escalaY(1.04);
+  }
+  100% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.02);
+    -transformación ms: escalaY(1.02);
+    -webkit-transformación: escalaY(1.02);
+    transformar: escalaY(1.02);
+  }
+  100% {
+    -transformación moz: escalaY(1);
+    -transformación ms: escalaY(1);
+    -webkit-transformación: escalaY(1);
+    transformar: escalaY(1);
+  }
+}
+@-moz-keyframes mostrarAnimación {
+  0% {
+    -transformación moz: escalaY(0.1);
+    -transformación ms: escalaY(0.1);
+    -webkit-transformación: escalaY(0.1);
+    transformar: escalaY(0.1);
+  }
+  40% {
+    -transformación moz: escalaY(1.04);
+    -transformación ms: escalaY(1.04);
+    -webkit-transformación: escalaY(1.04);
+    transformar: escalaY(1.04);
+  }
+  60% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.04);
+    -transformación ms: escalaY(1.04);
+    -webkit-transformación: escalaY(1.04);
+    transformar: escalaY(1.04);
+  }
+  100% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.02);
+    -transformación ms: escalaY(1.02);
+    -webkit-transformación: escalaY(1.02);
+    transformar: escalaY(1.02);
+  }
+  100% {
+    -transformación moz: escalaY(1);
+    -transformación ms: escalaY(1);
+    -webkit-transformación: escalaY(1);
+    transformar: escalaY(1);
+  }
+}
+@-webkit-keyframes showAnimation {
+  0% {
+    -transformación moz: escalaY(0.1);
+    -transformación ms: escalaY(0.1);
+    -webkit-transformación: escalaY(0.1);
+    transformar: escalaY(0.1);
+  }
+  40% {
+    -transformación moz: escalaY(1.04);
+    -transformación ms: escalaY(1.04);
+    -webkit-transformación: escalaY(1.04);
+    transformar: escalaY(1.04);
+  }
+  60% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.04);
+    -transformación ms: escalaY(1.04);
+    -webkit-transformación: escalaY(1.04);
+    transformar: escalaY(1.04);
+  }
+  100% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.02);
+    -transformación ms: escalaY(1.02);
+    -webkit-transformación: escalaY(1.02);
+    transformar: escalaY(1.02);
+  }
+  100% {
+    -transformación moz: escalaY(1);
+    -transformación ms: escalaY(1);
+    -webkit-transformación: escalaY(1);
+    transformar: escalaY(1);
+  }
+}
+@keyframes ocultarAnimación {
+  0% {
+    -transformación moz: escalaY(1);
+    -transformación ms: escalaY(1);
+    -webkit-transformación: escalaY(1);
+    transformar: escalaY(1);
+  }
+  60% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.02);
+    -transformación ms: escalaY(1.02);
+    -webkit-transformación: escalaY(1.02);
+    transformar: escalaY(1.02);
+  }
+  100% {
+    -transformación moz: escalaY(0);
+    -transformación ms: escalaY(0);
+    -webkit-transformación: escalaY(0);
+    transformar: escalaY(0);
+  }
+}
+@-moz-keyframes ocultarAnimación {
+  0% {
+    -transformación moz: escalaY(1);
+    -transformación ms: escalaY(1);
+    -webkit-transformación: escalaY(1);
+    transformar: escalaY(1);
+  }
+  60% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.02);
+    -transformación ms: escalaY(1.02);
+    -webkit-transformación: escalaY(1.02);
+    transformar: escalaY(1.02);
+  }
+  100% {
+    -transformación moz: escalaY(0);
+    -transformación ms: escalaY(0);
+    -webkit-transformación: escalaY(0);
+    transformar: escalaY(0);
+  }
+}
+@-webkit-keyframes ocultarAnimación {
+  0% {
+    -transformación moz: escalaY(1);
+    -transformación ms: escalaY(1);
+    -webkit-transformación: escalaY(1);
+    transformar: escalaY(1);
+  }
+  60% {
+    -transformación moz: escalaY(0,98);
+    -transformación ms: escalaY(0,98);
+    -webkit-transformación: escalaY(0,98);
+    transformar: escalaY(0,98);
+  }
+  80% {
+    -transformación moz: escalaY(1.02);
+    -transformación ms: escalaY(1.02);
+    -webkit-transformación: escalaY(1.02);
+    transformar: escalaY(1.02);
+  }
+  100% {
+    -transformación moz: escalaY(0);
+    -transformación ms: escalaY(0);
+    -webkit-transformación: escalaY(0);
+    transformar: escalaY(0);
+  }
+}
